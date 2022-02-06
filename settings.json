@@ -1,0 +1,41 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.columnSelection": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "editor.tokenColorCustomizations": {
+        
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "workbench.iconTheme": "Monokai Pro Icons",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "explorer.confirmDelete": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "php.executablePath": "C:\\Users\\aaron\\php\\php.exe",
+    "workbench.colorTheme": "One Dark Pro",
+    // "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace",
+    "editor.fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+    // "editor.fontFamily": "'Rec Mono Duotone', 'Courier New', monospace",
+    "editor.fontLigatures": false,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+    "editor.cursorWidth": 2, 
+    "prettier.singleQuote": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 2
+}
