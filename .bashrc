@@ -121,3 +121,38 @@ h1,h2,h3,h4,h5,h6 {
   code .
 }
 
+chakraproject () {
+    set -e
+    mkdir $1 && cd $1 &&
+npm create vite@latest . -- --template react-ts &&
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion react-icons axios &&
+rm -rf src/assets/ src/App.css src/App.tsx src/index.css src/main.tsx &&
+touch src/App.tsx src/index.css src/main.tsx &&
+echo "import { Text, VStack } from '@chakra-ui/react';
+
+function App() {
+	return <VStack justifyContent='center' height='100vh'><Text fontSize='3xl' fontWeight='medium'>Hello $USERNAME!</Text></VStack>
+}
+
+export default App;
+" >> src/App.tsx &&
+echo "import { ChakraProvider } from '@chakra-ui/react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
+  </React.StrictMode>
+);
+" >> src/main.tsx &&
+git init &&
+clear &&
+code .
+}
+
+
